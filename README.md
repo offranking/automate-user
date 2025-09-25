@@ -13,10 +13,36 @@ run "sudo apt update "
 ### ansible -version
 <img width="1141" height="198" alt="Screenshot 2025-09-24 at 10 02 04 pm" src="https://github.com/user-attachments/assets/3b60284c-5936-4de9-82c5-adf553179499" />
 
-ssh-keygen -t rsa
+### ssh-keygen -t rsa
  <img width="1156" height="595" alt="Screenshot 2025-09-24 at 10 02 39 pm" src="https://github.com/user-attachments/assets/6cab279c-8f9f-4a81-baf7-8f04050ea554" />
 
- open a file "nano inventory.ini"
+### open a file "nano inventory.ini"
 
 <img width="1381" height="896" alt="Screenshot 2025-09-24 at 10 55 22 pm" src="https://github.com/user-attachments/assets/8720f40d-87c2-4241-92e3-11a65c30ae6d" />
+### create a file called "playbook.yml" and put in the files
+
+<img width="772" height="80" alt="Screenshot 2025-09-25 at 3 20 21 pm" src="https://github.com/user-attachments/assets/30276fbc-ce2e-46cd-8abf-f1546bddd74e" />
+
+### Open the file with nano playbook.yml
+<img width="1381" height="896" alt="Screenshot 2025-09-25 at 3 21 13 pm" src="https://github.com/user-attachments/assets/dd3d49a2-9097-446b-85d4-b2bfa646f576" />
+
+### after that run the two server together ansible-playbook -i inventory.ini create_users.yml
+<img width="1195" height="401" alt="Screenshot 2025-09-25 at 3 23 49 pm" src="https://github.com/user-attachments/assets/9657acc5-9a26-453f-bae2-ed22857acac1" />
+
+
+### to verify the user created on the target sever run " cat /etc/passwd
+ls /home"
+
+
+
+<img width="1078" height="848" alt="Screenshot 2025-09-25 at 3 30 24 pm" src="https://github.com/user-attachments/assets/7d1bb811-54e6-464a-95f8-385108e67439" />
+
+
+### to test the SSH access ssh user1@<target-server-ip>
+ssh user2@<target-server-ip>
+
+<img width="947" height="406" alt="Screenshot 2025-09-25 at 3 25 02 pm" src="https://github.com/user-attachments/assets/e831ba4f-e6d1-485f-a883-c5ce692b39c1" />
+
+
+
 
